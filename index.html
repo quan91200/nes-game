@@ -1,57 +1,17 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!doctype html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type=="image/ico" href="assets/logo.ico">
-  <title>NES Web Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/assets/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional NES Web Emulator">
+  <title>NES Web Emulator</title>
 </head>
 
 <body>
-  <div class="container">
-    <div>
-      <img src="./assets/logo.png" alt="logo">
-      <h1>NES Web Emulator</h1>
-    </div>
-
-    <div class="button-group">
-      <button id="btnLoad" class="btn">📂 Chọn ROM Game...</button>
-      <button id="btnControls" class="btn btn-secondary">⌨️ Tùy chỉnh phím</button>
-    </div>
-
-    <div id="savedGamesPanel"
-      style="display: none; margin-top: 20px; padding: 20px; background: rgba(255, 255, 255, 0.05); border-radius: 10px;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-        <h3 style="color: #74c0fc; margin: 0;">💾 Game đã lưu</h3>
-        <div>
-          <button id="btnViewList" class="btn btn-small btn-secondary">📋 Danh sách</button>
-          <button id="btnViewGrid" class="btn btn-small btn-secondary">🔲 Lưới</button>
-        </div>
-      </div>
-      <div id="savedGamesList"></div>
-    </div>
-
-    <div id="status"></div>
-
-    <div id="controlsPanel" class="controls-panel">
-      <h3>⌨️ Tùy chỉnh phím điều khiển</h3>
-      <p style="color: #aaa; font-size: 14px;">Nhấn vào nút "Đổi phím" rồi nhấn phím bạn muốn sử dụng</p>
-
-      <div id="controlsList"></div>
-
-      <div style="margin-top: 20px;">
-        <button id="btnResetKeys" class="btn btn-small btn-secondary">🔄 Reset về mặc định</button>
-        <button id="btnSaveKeys" class="btn btn-small">💾 Lưu cài đặt</button>
-        <button id="btnCloseControls" class="btn btn-small btn-secondary">✖ Đóng</button>
-      </div>
-    </div>
-
-    <div id="gameContainer"></div>
-  </div>
-  <script src="https://unpkg.com/nostalgist"></script>
-  <script src="main.js"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>
